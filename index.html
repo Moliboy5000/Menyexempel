@@ -1,0 +1,81 @@
+<!DOCTYPE html> <html> <head>
+
+<title class="rubrik">Exempel 1 navigation bar</title>
+
+<meta charset = "utf-8" />
+
+<link href = "css/navigation.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!--wrapper börjar-->
+
+<div class="wrapper">
+
+  <header class="header">
+
+<h1>Min första hemsida</h1>
+
+</header>
+
+<header class="mainmenu">
+
+<ul>
+
+<li><a href="index.html">Home</a></li>
+<li><a href="news.html">News</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">About</a>
+    <div class="dropdown-content">
+      <a href="about.html">who are we</a>
+      <a href="story.html">our story</a>
+      <a href="mission.html">our mission</a>
+    </div>
+  </li>
+
+</ul>
+
+
+</header>
+
+<div class="wrapper_2col">
+
+<div class="leftcol">
+  <p>
+
+<b>OBS: Denna sida är den enda relevanta angående uppgiften. Resten av sidorna är gjorda på skoj och
+bör inte tas i åtanke vid bedömning. Nedan följer en kort förklaring till det viktiga kring sidans navbar.</b>
+
+</p>
+<p>
+Jag har lagt till en del förändringar i sidan. Det första jag gjorde var att separera de olika knappan i min navbar
+för att ge den en mer utspridd och skönare känsla. Hemknappen ligger tillsammans med nyhetsknappen till det vänstra hörnet, medan about knappen är till höger.
+Appropå about knappen så är den en dropdown-knapp med tre olika alternativ till sidor, vilket gjorde navbaren mindre trång.
+</p>
+<p>
+Slutligen har jag lagt till några media queries för att göra sidan snyggare vid andra resolutioner. Vid vidare experimentering har jag upptäckt att det finns en massa olika resolutioner som kan förstöra
+sidan, men det skulle ta en enorm tid att göra alla så jag gjorde endast några få för uppgiftens skull. Den mest tydliga ändringen märks när browsern har en bredd på mindre än 600 pixlar, varpå knapparna i navbaren läggs på horisontellt.
+Detta gör till ett bättre upplägg på mindre enheter, eftersom layouten blir mer kompakt. Den andra querien gör så att paragraftexten blir mindre och navbaren tunnas ut om höjden blir lägre än 600 pixlar, vilket gör sidan mer kompakt så
+att man inte behöver scrolla lika mycket på en annan enhet med de specifikationerna. Totalt kan sidan alltså ha fyra olika utseenden: den normala, bredd och höjd under 600px, bredd under 600px och höjd under 600px. Det tog en hel del
+tid att göra så att allting funkade bra, men jag lyckades mer eller mindre till slut. Sen är det så som jag tidigare nämnt att det finns många fler resolutioner som gör att sidans upplägg förstörs, men jag höll mig till några få medie queries för
+enkelhetens skull.
+</p>
+<div class="push"></div>
+
+</div><!--rightcol slutar-->
+
+</div><!--wrapper2col slutar-->
+
+<footer class="footer">
+
+<p>All rights reserved - &#169; Copyright</p>
+
+</footer>
+
+</div><!--wrapper slutar-->
+
+</body>
+
+</html>
