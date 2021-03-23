@@ -10,10 +10,10 @@
   background: #D888FF;
   margin: 5px;
 }
-.nested-ul {
+.nested {
   list-style-type: circle;
 }
-.nested-ul li {
+.nested li {
   background: #EECBFF;
   margin: 5px;
 }
