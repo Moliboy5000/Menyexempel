@@ -52,7 +52,7 @@ margin-bottom: 10px;
 content: counter(step-counter);
 margin-right: 5px;
 font-size: 80%;
-background-color: rgb(200, 200, 200);
+background-color: rgb(100, 200, 200);
 color: #fffacd;
 font-weight: bold;
 font-style: oblique;
