@@ -1,119 +1,94 @@
-<!DOCTYPE html> <html> <head>
-
-<title class="rubrik">Exempel 1 navigation bar</title>
-
-<meta charset = "utf-8" />
-
-<link href = "css/navigation.css" rel="stylesheet" type="text/css" />
-  <link href="css/lists-tables.css" rel="stylesheet" type="text/css" />
-
-</head>
-
-<body>
-
+<!DOCTYPE html> 
+<html> 
+  <head>
+    <title class="rubrik">Exempel 1 navigation bar</title>
+    <meta charset = "utf-8" />
+    <link href = "css/navigation.css" rel="stylesheet" type="text/css" />
+    <link href="css/lists-tables.css" rel="stylesheet" type="text/css" />
+  </head>
+   <body>
 <!--wrapper börjar-->
+    <div class="wrapper">
 
-<div class="wrapper">
+      <header class="header">
+        <h1>Min första hemsida</h1>
+      </header>
 
-  <header class="header">
+      <header class="mainmenu">
 
-<h1>Min första hemsida</h1>
+        <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">News</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">About</a>
+              <div class="dropdown-content">
+                <a href="about.html">who are we</a>
+                <a href="story.html">our story</a>
+                <a href="mission.html">our mission</a>
+              </div>
+          </li>
+        </ul>
+      </header>
 
-</header>
+      <div class="wrapper_2col">
+        <div class="leftcol">
+          <p>
+            Our mission is to provide an excellent service for our clients. Along with our rigid work routine, we
+            strive to surpass everyone's expectations and and grow stronger than ever before. Together we are strong and compelled
+            to change the world for the better and improve humanity. Here is our recipe for success:
+          </p>
+          <h1>Lists</h1>
+          <h2> An Unordered List of Some Veggies </h2>
 
-<header class="mainmenu">
+          <ul class="unordered">
+            <li>Oca</li>
+            <li>Romanesco</li>
+            <ul class="nested">
+              <li>Kohlrabi</li>
+              <li>Celeriac</li>
+            </ul>
+            <li>Cabbage</li>
+          </ul>
 
-<ul class="navbar">
+          <h2> An Ordered To-Do List </h2>
+          <ol class="ordered">
+            <li>Wake up</li>
+            <li>Make coffee</li>
+            <li>Drink coffee</li>
+            <li>Make more coffee</li>
+          </ol>
 
-<li><a href="index.html">Home</a></li>
-<li><a href="news.html">News</a></li>
-  <li class="dropdown">
-    <a href="javascript:void(0)" class="dropbtn">About</a>
-    <div class="dropdown-content">
-      <a href="about.html">who are we</a>
-      <a href="story.html">our story</a>
-      <a href="mission.html">our mission</a>
-      
-      
-    </div>
-  </li>
+          <ol class="custom-box-list">
+            <li>This is the fourth item</li>
+            <li>This is the third item</li>
+            <li>This is the second item</li>
+            <li>This is the first item</li>
+          </ol>
 
-</ul>
+          <ul class="image-list">
+            <li> An old silent pond </li>
+            <li> A frog jumps into the pond </li>
+            <li> Splash! Silence again... </li>
+          </ul>
 
-</header>
+          <h2>Some popular sites</h2>
+          <p>Click on a name to go to that page:</p>
 
-<div class="wrapper_2col">
+          <ul class="popular-sites">
+            <li><a href="https://www.youtube.com/user/PewDiePie">A good channel</a></li>
+            <li><a href="https://www.theonion.com/">A good source of news</a></li>
+            <li><a href="https://alwaysjudgeabookbyitscover.com/">Great books</a></li>
+          </ul>
 
-<div class="leftcol">
-  <p>
+          <div class="push"></div>
+          
+        </div><!--rightcol slutar-->
+      </div><!--wrapper2col slutar-->
 
-Our mission is to provide an excellent service for our clients. Along with our rigid work routine, we
-strive to surpass everyone's expectations and and grow stronger than ever before. Together we are strong and compelled
-to change the world for the better and improve humanity. Here is our recipe for success:
+      <footer class="footer">
+        <p>All rights reserved - &#169; Copyright</p>
+      </footer>
 
-</p>
-  <h1>Lists</h1>
-
-<h2> An Unordered List of Some Veggies </h2>
-
-<ul class="unordered">
-
-<li>Oca</li>
-<li>Romanesco</li>
-<ul class="nested">
-
-<li>Kohlrabi</li>
-<li>Celeriac</li>
-
-</ul>
-<li>Cabbage</li>
-</ul>
-
-<h2> An Ordered To-Do List </h2>
-
-<ol class="ordered">
-  
-<li>Wake up</li>
-<li>Make coffee</li>
-<li>Drink coffee</li>
-<li>Make more coffee</li>
-
-</ol>
-
-<ol class="custom-box-list">
-<li>This is the fourth item</li>
-<li>This is the third item</li>
-<li>This is the second item</li>
-<li>This is the first item</li>
-
-</ol>
-<ul class="image-list">
-<li> An old silent pond </li>
-<li> A frog jumps into the pond </li>
-<li> Splash! Silence again... </li>
-</ul>
-  <h2>Some popular sites</h2>
-<p>Click on a name to go to that page:</p>
-<ul class="popular-sites">
-<li><a href="https://www.youtube.com/user/PewDiePie">A good channel</a></li>
-<li><a href="https://www.theonion.com/">A good source of news</a></li>
-<li><a href="https://alwaysjudgeabookbyitscover.com/">Great books</a></li>
-
-</ul>
-<div class="push"></div>
-
-</div><!--rightcol slutar-->
-
-</div><!--wrapper2col slutar-->
-
-<footer class="footer">
-
-<p>All rights reserved - &#169; Copyright</p>
-
-</footer>
-
-</div><!--wrapper slutar-->
-
-</body>
-
+    </div><!--wrapper slutar-->
+  </body>
 </html>
