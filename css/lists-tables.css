@@ -61,19 +61,19 @@ padding: 3px 8px;
 border-radius: 3px;
 
 }
-.list-image {
+.image-list {
 list-style: none;
 padding-left: 0;
 }
 
-.list-image li {
+.image-list li {
 position: relative;
 padding-left: 30px;
 line-height: 170%;
 background: #FFCF95;
 }
 
-.list-image li:before {
+.image-list li:before {
 content: '';
 width: 20px;
 height: 20px;
