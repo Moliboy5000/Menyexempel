@@ -108,6 +108,7 @@
     counter-reset: list-counter;
     list-style: none;
     float:left;
+  margin-top: 50px;
 }
 .circle li{
     margin: 1.5em 0;    
