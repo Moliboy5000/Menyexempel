@@ -33,6 +33,7 @@
 .nested li {
   background: #EECBFF;
   margin: 5px;
+ 
 }
 
 /* format .custom-box-list */
@@ -102,4 +103,29 @@
   left: 0;
   top: 50%;
   transform: translateY(-50%);
+}
+.circle{
+    counter-reset: list-counter;
+    list-style: none;
+    float:left;
+}
+.circle li{
+    margin: 1.5em 0;    
+}
+.circle li:before{
+    content: counter(list-counter);
+    counter-increment: list-counter;
+    width: 1em;
+    height: 1em;
+    padding: .5em;
+    margin-right: 1em;
+    border-radius: 50%;
+    border: .25em solid #ccc;
+    background: #000;
+    color: #fff;
+    font-family: arial;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    
 }
