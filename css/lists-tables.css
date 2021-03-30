@@ -1,18 +1,18 @@
+/* format .ordered */
 .ordered {
-background: #FD8A00;
-padding: 20px;
-width: 20%;
-font-family: 'Brush Script MT', cursive;
-font-size: 1.3em;
-  
+  background: #FD8A00;
+  padding: 20px;
+  width: 20%;
+  font-family: 'Brush Script MT', cursive;
+  font-size: 1.3em;
 }
-
 .ordered li {
-background: #FFCF95;
-padding: 5px;
-margin-left: 20px;
-
+  background: #FFCF95;
+  padding: 5px;
+  margin-left: 20px;
 }
+
+/* format .unordered */
 .unordered {
   list-style-type: square;
   line-height: 170%;
@@ -25,6 +25,8 @@ margin-left: 20px;
   background: #D888FF;
   margin: 5px;
 }
+
+/* format .nested */
 .nested {
   list-style-type: circle;
 }
@@ -32,56 +34,72 @@ margin-left: 20px;
   background: #EECBFF;
   margin: 5px;
 }
+
+/* format .custom-box-list */
 .custom-box-list {
-
-margin: 0;
-
-padding: 0;
-
-list-style-type: none;
-
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
-
 .custom-box-list li {
-counter-increment: step-counter;
-margin-bottom: 10px;
-
+  counter-increment: step-counter;
+  margin-bottom: 10px;
 }
-
 .custom-box-list li::before {
-content: counter(step-counter);
-margin-right: 5px;
-font-size: 80%;
-background-color: rgb(100, 200, 200);
-color: #fffacd;
-font-weight: bold;
-font-style: oblique;
-font-family: serif;
-padding: 3px 8px;
-border-radius: 3px;
-
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: rgb(100, 200, 200);
+  color: #fffacd;
+  font-weight: bold;
+  font-style: oblique;
+  font-family: serif;
+  padding: 3px 8px;
+  border-radius: 3px;
 }
+
+/* format .image-list */
 .image-list {
-list-style: none;
-padding-left: 0;
+  list-style: none;
+  padding-left: 0;
 }
-
 .image-list li {
-position: relative;
-padding-left: 30px;
-line-height: 170%;
+  position: relative;
+  padding-left: 30px;
+  line-height: 170%;
+}
+.image-list li:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url('../buddhist.png');
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.image-list li:before {
-content: '';
-width: 20px;
-height: 20px;
-position: absolute;
-background-image: url('buddhist.png');
-background-size: cover;
-background-position: center;
-left: 0;
-top: 50%;
-transform: translateY(-50%);
-
+/* format .popular-sites */
+.popular-sites {
+  list-style: none;
+  padding-left: 0;
+}
+.popular-sites li {
+  position: relative;
+  padding-left: 30px;
+  line-height: 170%;
+}
+.popular-sites li:before {
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  background-image: url('../ninja.png');
+  background-size: cover;
+  background-position: center;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
 }
