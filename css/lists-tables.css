@@ -131,3 +131,43 @@
     display: inline-block;
     
 }
+table, td, th {
+border: 1px solid black;
+
+}
+table {
+border-collapse: collapse;
+
+}
+th, td {
+padding: 15px;
+}
+td {
+text-align: center;
+}
+caption {
+caption-side: bottom;
+text-align: center;
+font-style: italic;
+font-weight: bold;
+color: black;
+
+}
+.table-simple th {
+
+background-color: #647069;
+color: white; 
+}
+
+.table-simple tr:nth-child(even) {
+background-color: #33FFF6;
+}
+
+.table-simple tr:nth-child(odd) {
+background-color: #26EE75;
+}
+
+.table-simple tr:hover {
+background-color: #acffe3;
+
+}
