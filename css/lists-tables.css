@@ -192,3 +192,29 @@ font-weight:bold ;
 .head-body-foot thead:hover {
 background-color: #acffe3;
 }
+
+table#GeneratedTable {
+  width: 100%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-color: #ffcc00;
+  border-style: solid;
+  color: #000000;
+}
+
+table.GeneratedTable td, table#GeneratedTable th {
+  border-color: #ffcc00;
+  border-style: solid;
+}
+
+table#GeneratedTable thead {
+  background-color: #ffcc00;
+}
+#scrollbar {
+  overflow-x: auto;
+}
+#table-image {
+
+margin: 0 auto;
+
+}
